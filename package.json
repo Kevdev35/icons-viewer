@@ -1,0 +1,31 @@
+{
+  "name": "icons-viewer",
+  "displayName": "Icons Viewer",
+  "description": "Abre páginas de librerías de iconos dentro de VSCode para no perder tiempo cambiando de navegador.",
+  "version": "0.0.2",
+  "publisher": "Kevdev35",
+  "icon": "logo-icons-viewer.png",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [
+    "onCommand:iconsViewer.open"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "iconsViewer.open",
+        "title": "Abrir Icons Viewer"
+      }
+    ]
+  },
+  "scripts": {
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "vsce": "^2.15.0"
+  },
+  "license": "MIT"
+}
