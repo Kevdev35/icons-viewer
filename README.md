@@ -2,6 +2,10 @@
 
 Extensión de VSCode para abrir páginas de librerías de iconos directamente en el editor, sin tener que salir a un navegador externo.
 
+🔗 **Descarga Aquí:**
+
+https://marketplace.visualstudio.com/items?itemName=KevDev35.icons-viewer&ssr=false#overview
+
 ## 🚀 Cómo usar
 1. Presiona `Ctrl+Shift+P` (o `Cmd+Shift+P` en Mac).
 2. Busca el comando: **"Abrir Icons Viewer"**.
@@ -13,4 +17,5 @@ Extensión de VSCode para abrir páginas de librerías de iconos directamente en
 - Lucide Icons
 - Heroicons
 - Tabler Icons
+
 
