@@ -2,7 +2,7 @@
   "name": "icons-viewer",
   "displayName": "Icons Viewer",
   "description": "Icon Viewer te lleva directamente a los íconos que ya conoces — sin perder tiempo buscando entre docenas de páginas.",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "publisher": "Kevdev35",
   "icon": "logo-icons-viewer.png",
   "engines": {
@@ -12,7 +12,13 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.iconsViewer.open"
+    "onStartupFinished",
+    "onLanguage:typescriptreact",
+    "onLanguage:javascriptreact",
+    "onLanguage:svelte",
+    "onLanguage:html",
+    "onLanguage:javascript",
+    "onLanguage:typescript"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -21,7 +27,23 @@
         "command": "iconsViewer.open",
         "title": "Abrir Icons Viewer"
       }
-    ]
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Icons Viewer",
+      "properties": {
+        "iconsViewer.enableWebview": {
+          "type": "boolean",
+          "default": true,
+          "description": "Habilitar Webview"
+        },
+        "iconsViewer.enableIntelliSense": {
+          "type": "boolean",
+          "default": true,
+          "description": "Habilitar IntelliSense"
+        }
+      }
+    }
   },
   "scripts": {
     "package": "vsce package",
