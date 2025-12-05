@@ -2,7 +2,7 @@
   "name": "icons-viewer",
   "displayName": "Icons Viewer",
   "description": "Icon Viewer te lleva directamente a los íconos que ya conoces — sin perder tiempo buscando entre docenas de páginas.",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "publisher": "Kevdev35",
   "icon": "logo-icons-viewer.png",
   "engines": {
