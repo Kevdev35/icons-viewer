@@ -1,25 +1,69 @@
-# Icons Viewer
+# 🧩 Icons Viewer
 
-Extensión de VSCode para abrir páginas de librerías de iconos directamente en el editor, sin tener que salir a un navegador externo.
+⚡ ¿Cansado de abrir el navegador cada vez que necesitas un ícono?
 
-## 🔗 Descarga Aquí:
+Icon Viewer te lleva directamente a los íconos que ya conoces —
+sin perder tiempo buscando entre docenas de páginas.
 
-https://marketplace.visualstudio.com/items?itemName=KevDev35.icons-viewer&ssr=false#overview
+Explora tus librerías favoritas como Lucide, Heroicons, Tabler, Feather y más,
+directamente desde VSCode, sin interrumpir tu flujo de trabajo.
 
+Para librerías más completas como Material Icons o Font Awesome,
+la extensión abrirá automáticamente el sitio oficial para ofrecerte
+toda su experiencia visual sin limitaciones de compatibilidad.
 
-![Demo de Icons Viewer](demo.png)
+🧠 Mantén el enfoque, ahorra tiempo y encuentra el ícono perfecto sin salir de tu editor.
 
-## 🚀 Cómo usar
-1. Presiona `Ctrl+Shift+P` (o `Cmd+Shift+P` en Mac).
-2. Busca el comando: **"Abrir Icons Viewer"**.
-3. Selecciona la librería de iconos.
-4. Disfruta buscándolos directamente en VSCode.
+---
 
-## 📌 Librerías soportadas
-- React Icons
+### 🚀 Características principales
+
+- 🔎 Acceso rápido a **Font Awesome** y **Material Icons**.  
+- 🌐 Abre los íconos directamente en el navegador predeterminado (como Brave, Chrome, Edge, etc.).  
+- ⚡ Optimizado para desarrolladores: sin menús innecesarios ni pasos extra.  
+- 🧠 Interfaz minimalista y fluida, hecha para mantenerte concentrado.  
+
+---
+
+### 💻 Librerías disponibles
+
 - Lucide Icons
 - Heroicons
 - Tabler Icons
+- Boxicons
+- Feather Icons
+- React Icons
+- Material Icons (Google)
+- Font Awesome
 
+---
 
+### 💡 Ideal para
 
+- Diseñadores y desarrolladores que trabajan con frameworks como **React**, **Next.js**, **Vue**, o **Svelte**.  
+- Aquellos que buscan **inspiración visual** sin perder tiempo.  
+- Usuarios que quieren mantener un **flujo de trabajo rápido y directo** dentro de VSCode.  
+
+---
+
+### 🛠️ Cómo usar
+
+1. Abre la paleta de comandos (`Ctrl + Shift + P` o `Cmd + Shift + P` en macOS).  
+2. Escribe `Icons Viewer`.  
+3. Selecciona la biblioteca que quieras abrir.  
+4. ¡Listo! Tu navegador abrirá la página oficial de íconos lista para usar.  
+
+---
+
+### 🧠 Nota
+
+Algunas librerías (como Material Icons o Font Awesome) se abrirán en tu navegador predeterminado, ya que sus sitios no permiten mostrarse directamente dentro de VSCode por políticas de seguridad.
+
+Esto garantiza que puedas disfrutar toda la experiencia visual original, sin limitaciones técnicas
+
+---
+
+### ❤️ Creado por
+
+**Divindey** — Diseñamos experiencias, no solo páginas.  
+[divindey.dev](https://divindey.dev)
