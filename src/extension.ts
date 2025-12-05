@@ -1,6 +1,6 @@
-const vscode = require('vscode');
+import * as vscode from 'vscode';
 
-function activate(context) {
+export function activate(context: vscode.ExtensionContext) {
   let disposable = vscode.commands.registerCommand('iconsViewer.open', async () => {
     const libraries = {
       "Font Awesome": "https://fontawesome.com/icons",
@@ -13,15 +13,16 @@ function activate(context) {
       "Remix Icon": "https://remixicon.com/",
       "Bootstrap Icons": "https://icons.getbootstrap.com/",
       "Typicons": "https://www.s-ings.com/typicons/",
-    };
+      "Iconfy": "https://icon-sets.iconify.design/"
+    } as const;
 
-    const pick = await vscode.window.showQuickPick(Object.keys(libraries), {
+    const pick = await vscode.window.showQuickPick(Object.keys(libraries) as Array<keyof typeof libraries>, {
       placeHolder: 'Selecciona una biblioteca de íconos',
     });
 
     if (!pick) return;
 
-    const url = libraries[pick];
+    const url = libraries[pick as keyof typeof libraries];
 
     if (pick === "Font Awesome" || pick === "Material Icons") {
       vscode.env.openExternal(vscode.Uri.parse(url));
@@ -29,8 +30,8 @@ function activate(context) {
     }
 
     const panel = vscode.window.createWebviewPanel(
-      'iconViewer',
-      `${pick} — Icon Viewer`,
+      'iconsViewer',
+      `${pick} — Icons Viewer`,
       vscode.ViewColumn.Beside,
       { enableScripts: true }
     );
@@ -48,7 +49,7 @@ function activate(context) {
   context.subscriptions.push(disposable);
 }
 
-function getWebviewContent(url) {
+function getWebviewContent(url: string): string {
   return `
     <!DOCTYPE html>
     <html lang="es">
@@ -72,13 +73,14 @@ function getWebviewContent(url) {
           padding: 0 10px;
         }
         #openBrowser {
-          background: #007acc;
+          background: #181818ff;
           color: white;
           border: none;
           padding: 6px 12px;
-          border-radius: 4px;
+          border-radius: 10px;
           cursor: pointer;
           font-size: 13px;
+          border: 1px solid #333333ff;
         }
         iframe {
           width: 100%;
@@ -105,6 +107,4 @@ function getWebviewContent(url) {
   `;
 }
 
-function deactivate() {}
-
-module.exports = { activate, deactivate };
+export function deactivate() {}

@@ -2,17 +2,19 @@
   "name": "icons-viewer",
   "displayName": "Icons Viewer",
   "description": "Icon Viewer te lleva directamente a los íconos que ya conoces — sin perder tiempo buscando entre docenas de páginas.",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "publisher": "Kevdev35",
   "icon": "logo-icons-viewer.png",
   "engines": {
     "vscode": "^1.80.0"
   },
-  "categories": ["Other"],
+  "categories": [
+    "Other"
+  ],
   "activationEvents": [
     "onCommand:extension.iconsViewer.open"
   ],
-  "main": "./src/extension.cjs",
+  "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
@@ -22,9 +24,18 @@
     ]
   },
   "scripts": {
-    "package": "vsce package"
+    "package": "vsce package",
+    "compile": "tsc -p ./",
+    "vscode:prepublish": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kevdev35/icons-viewer.git"
   },
   "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.9.3",
     "vsce": "^2.15.0"
   },
   "license": "MIT"

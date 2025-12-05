@@ -1,0 +1,18 @@
+# Excluir desarrollo
+.vscode/
+.github/
+src/
+tsconfig.json
+
+# Dependencias innecesarias
+node_modules/**
+
+# Archivos del proyecto
+README.md
+.vscodeignore
+
+# Archivos del sistema
+**/*.map
+**/*.psd
+**/*.jpg
+**/*.ts
