@@ -35,6 +35,7 @@ toda su experiencia visual sin limitaciones de compatibilidad.
 - React Icons
 - Material Icons (Google)
 - Font Awesome
+- Iconify
 
 ---
 
